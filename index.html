@@ -1,61 +1,102 @@
-index.html
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professional Plumbing Services | Local & Reliable</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lucide/0.263.0/lucide.min.js"></script>
+    <title>D & C Plumbing | River Valley Residential & Commercial Services</title>
     <style>
-        :root { --primary: #0056b3; --secondary: #333; --light: #f4f7f6; }
-        body { font-family: sans-serif; margin: 0; color: var(--secondary); line-height: 1.6; }
-        header { background: white; padding: 1rem; text-align: center; border-bottom: 3px solid var(--primary); position: sticky; top: 0; z-index: 100; }
-        .hero { background: linear-gradient(rgba(0,86,179,0.8), rgba(0,86,179,0.8)), url('https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&w=800&q=80'); background-size: cover; color: white; padding: 60px 20px; text-align: center; }
-        .btn { background: #ffcc00; color: #222; padding: 15px 30px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block; margin-top: 20px; font-size: 1.2rem; }
-        .services { padding: 40px 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; max-width: 1000px; margin: auto; }
-        .service-card { border: 1px solid #ddd; padding: 20px; border-radius: 8px; text-align: center; transition: 0.3s; }
-        .service-card:hover { border-color: var(--primary); box-shadow: 0 5px 15px rgba(0,0,0,0.1); }
-        .contact-section { background: var(--light); padding: 40px 20px; text-align: center; }
-        footer { padding: 20px; text-align: center; font-size: 0.9rem; color: #666; }
+        :root { --primary: #004a99; --secondary: #2c3e50; --accent: #f1c40f; --light: #f8f9fa; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; color: #333; line-height: 1.6; }
+        
+        /* Header & Navigation */
+        header { background: white; padding: 1.5rem; text-align: center; border-bottom: 4px solid var(--primary); box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .logo { font-size: 2rem; font-weight: 900; color: var(--primary); letter-spacing: 1px; }
+        
+        /* Hero Section */
+        .hero { background: linear-gradient(rgba(0, 74, 153, 0.85), rgba(0, 74, 153, 0.85)), url('https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=1200&q=80'); 
+                background-size: cover; background-position: center; color: white; padding: 80px 20px; text-align: center; }
+        .hero h1 { margin: 0; font-size: 2.5rem; }
+        .hero p { font-size: 1.2rem; margin: 20px 0; max-width: 700px; margin-left: auto; margin-right: auto; }
+        
+        /* Contact Buttons */
+        .cta-container { margin-top: 30px; }
+        .btn { background: var(--accent); color: #000; padding: 18px 32px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block; font-size: 1.2rem; transition: transform 0.2s; }
+        .btn:hover { transform: scale(1.05); }
+        .email-link { display: block; color: white; margin-top: 15px; text-decoration: underline; }
+
+        /* Experience Section */
+        .experience-bar { background: var(--secondary); color: white; padding: 15px; text-align: center; font-weight: bold; }
+
+        /* Services Grid */
+        .section-title { text-align: center; margin-top: 50px; color: var(--primary); }
+        .services { padding: 40px 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; max-width: 1100px; margin: auto; }
+        .service-card { background: var(--light); padding: 30px; border-radius: 10px; border-top: 5px solid var(--primary); }
+        .service-card h3 { margin-top: 0; color: var(--primary); }
+
+        /* Service Areas */
+        .areas { background: #eee; padding: 40px 20px; text-align: center; }
+        .area-list { max-width: 800px; margin: auto; display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; }
+        .area-tag { background: white; padding: 5px 15px; border-radius: 20px; font-size: 0.9rem; border: 1px solid #ccc; }
+
+        footer { background: var(--secondary); color: white; padding: 40px 20px; text-align: center; margin-top: 50px; }
     </style>
 </head>
 <body>
 
 <header>
-    <div style="font-size: 1.5rem; font-weight: bold; color: var(--primary);">PLUMBING PROFESSIONALS</div>
+    <div class="logo">D & C PLUMBING</div>
+    <div style="font-weight: bold; color: #666;">Residential & Commercial</div>
 </header>
 
 <section class="hero">
-    <h1>Quality Plumbing You Can Trust</h1>
-    <p>Licensed, Insured, and Ready to Help 24/7</p>
-    <a href="tel:5555555555" class="btn">📞 Call Now: (555) 555-5555</a>
+    <h1>Professional Plumbing in the River Valley</h1>
+    <p>With over 40 years of combined experience, Dustin and Chris deliver reliable, professional, and high-quality service for all your plumbing needs.</p>
+    <div class="cta-container">
+        <a href="tel:4793128444" class="btn">📞 Call 479-312-8444</a>
+        <a href="mailto:DCplumbingrivervalley@gmail.com" class="email-link">Or Email for a Free Estimate</a>
+    </div>
 </section>
 
+<div class="experience-bar">
+    40+ Years Combined Experience • Licensed & Insured
+</div>
+
+<h2 class="section-title">Our Specialized Services</h2>
 <section class="services">
     <div class="service-card">
-        <h3>Emergency Repairs</h3>
-        <p>Burst pipes, leaks, and urgent repairs handled quickly.</p>
-    </div>
-    <div class="service-card">
-        <h3>Drain Cleaning</h3>
-        <p>Professional clearing of stubborn clogs and main lines.</p>
+        <h3>General Service & Repair</h3>
+        <p>Expert troubleshooting and repair for all household and commercial plumbing issues.</p>
     </div>
     <div class="service-card">
         <h3>Water Heaters</h3>
-        <p>Installation and repair of traditional and tankless systems.</p>
+        <p>Specialized installation and repair services to keep your hot water running efficiently.</p>
+    </div>
+    <div class="service-card">
+        <h3>Remodel & New Construction</h3>
+        <p>Professional plumbing layout and installation for your new builds or home renovations.</p>
+    </div>
+    <div class="service-card">
+        <h3>Drain Cleaning</h3>
+        <p>Clearing tough clogs and maintaining your lines for long-term reliability.</p>
     </div>
 </section>
 
-<section class="contact-section">
-    <h2>Reliable Service, Fair Pricing</h2>
-    <p>Serving the local community with pride. No job is too small.</p>
-    <p><strong>Available Monday - Saturday</strong></p>
+<section class="areas">
+    <h2>Proudly Serving the River Valley</h2>
+    <p>Providing top-tier plumbing services to:</p>
+    <div class="area-list">
+        <span class="area-tag">Fort Smith</span> <span class="area-tag">Van Buren</span>
+        <span class="area-tag">Mulberry</span> <span class="area-tag">Waldron</span>
+        <span class="area-tag">Mansfield</span> <span class="area-tag">Natural Dam</span>
+        <span class="area-tag">Cedarville</span> <span class="area-tag">Paris</span>
+        <span class="area-tag">Uniontown</span> <span class="area-tag">Ozark</span>
+    </div>
 </section>
 
 <footer>
-    &copy; 2026 Local Plumbing Business | Licensed & Insured
+    <p><strong>D & C Plumbing</strong></p>
+    <p>Phone: 479-312-8444 | Email: DCplumbingrivervalley@gmail.com</p>
+    <p style="font-size: 0.8rem; opacity: 0.7;">&copy; 2026 D & C Plumbing. All rights reserved.</p>
 </footer>
 
 </body>
